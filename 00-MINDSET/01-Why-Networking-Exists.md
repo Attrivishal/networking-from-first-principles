@@ -196,11 +196,30 @@ This is where protocols and communication standards eventually become necessary.
          Building Name                      MAC address (hardware address)
 
 5. Why Isn't One Address Enough?
-
+    
+    At, First it may seem that every computet could simply have one uinque address. 
+   
+   But consider a larger system. 
+      
+        Computer A
+           | -- Browser
+           | -- SSH Client
+           | -- Email Client
+           | -- Other Applications
+      
+      Suppose Computer A recieves some network traffic. 
+        
+           The computer knows:
+                  "This traffic is intended for me."
+      But another questions remains. 
+        
+           Which application on this computer should receive it? 
+      
    So bacisally one address is not enough for sending the data correctly.
 
    Because :
       
         A computer can have many  application running at the same time, and the network needs to know which one should reveive the incoming data. 
+
 
    
