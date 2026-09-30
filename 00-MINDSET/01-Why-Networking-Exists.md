@@ -197,7 +197,7 @@ This is where protocols and communication standards eventually become necessary.
 
 5. Why Isn't One Address Enough?
     
-    At, First it may seem that every computet could simply have one uinque address. 
+    At First it may seem that every computer could simply have one unique address. 
    
    But consider a larger system. 
       
@@ -221,5 +221,39 @@ This is where protocols and communication standards eventually become necessary.
       
         A computer can have many  application running at the same time, and the network needs to know which one should reveive the incoming data. 
 
+ Therefore:
 
+   Networking must indentify not only the destination machine, but also the destination communication  endpoint or service. 
+
+   This eventually leads to concepts such as:
+     
+     1. Port
+     2. Sockets
+     3. Transport protocols
    
+   Key insight:
+     
+      A Complete network destination requires two address - one for the machine (IP), one for the application (port).
+
+   If i tell you with a Analogy: 
+
+       An IP address is like a building's street address. A port number is like an apartment number. The main carrier needs both to deliver to the right person.
+
+   If i tell you with the flow:
+     
+
+    Data arrives at 192.168.1.10
+
+        ┌─────────────────────────┐
+        │   Computer A            │
+        │   IP: 192.168.1.10      │
+        │                         │
+        │   Port 443 → Browser    │
+        │   Port 22  → SSH        │
+        │   Port 25  → Email      │
+        └─────────────────────────┘
+
+
+IP says: "Which computer?"  → This one 
+Port says: "Which app?"     → Port 443 
+
