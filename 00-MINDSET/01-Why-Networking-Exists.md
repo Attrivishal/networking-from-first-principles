@@ -462,5 +462,31 @@ Instead, cities use:
 
    But notice the reasoning.
       
-      
-          
+      We didn't start with: 
+
+          "A router is a layer 3 device"
+     
+     We started with:
+        
+         Different networks need a mechanism to communicate. 
+     
+   That problem leads us toward rouitng.
+
+9. The internet makes the problem much larger
+    
+  Now imagine thousands or millions of networks:
+    
+           Network A
+              │
+           Network B
+              │
+           Network C
+             │
+           Network D
+             │
+           Network E 
+
+   A device may need to communicate with another device many networks away.
+     
+     For example:
+         
