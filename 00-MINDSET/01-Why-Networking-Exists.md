@@ -423,4 +423,44 @@ Instead, cities use:
       4. load balancers
       5. gateways
 
-       Each solve a different problem
+  Each solve a different problem
+
+8. The next Problem: Different networks
+ 
+    Now imagine two seperate  networks: 
+
+    Network A                   Network B
+    A - B - C                   D - E - F
+
+    Suppose :
+      
+      A -> F 
+   
+   Computer A cannot simply assume that F is directly connected to its local network.
+    
+    The traffic needs to cross from one network to another.
+   
+   We therefore need something that can make a decission about where traffic should go. 
+
+     Conceptually:
+        
+               Network A 
+                   |
+                   |
+                   |
+                 Router
+                   |
+                   |
+                   |
+               Network B
+   
+   The router connects differnt networks and can make forwarding decissions. 
+
+        This introduce one of the most important concept of networking "ROUTING": 
+          
+            Routing is the process of determining where traffic should be forwarded to reach another network. 
+
+   But notice the reasoning.
+      
+      
+          
