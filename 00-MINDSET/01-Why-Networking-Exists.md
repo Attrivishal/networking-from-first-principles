@@ -387,3 +387,40 @@ Instead, cities use:
      Streets — shared paths
      Intersections — intermediate points
      Networking works the same way.
+
+
+
+7. Introducing Intermediate Devices
+ 
+     Here we comes with a Concept of "SWITCH" 
+
+     Instead of connecting every computer direclty to every other computer, we can introduce a device that connects multiple system.
+       
+         
+                    B
+                    |
+                    |
+                    |
+        A ------- Switch ------- C
+                    |
+                    |
+                    |
+                    D
+      
+      Now A does not need a direct physical connection to every computer.
+      
+      The intermediate device can help deliver the traffic.
+       
+        This introduce another fundamental concept:
+
+           Networks uses intermediate devices to make communication scalable.  
+
+      for example:
+
+      1. switches
+      2. routers
+      3. firewalls
+      4. load balancers
+      5. gateways
+
+       Each solve a different problem
