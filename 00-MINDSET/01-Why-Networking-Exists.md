@@ -490,3 +490,131 @@ Instead, cities use:
      
      For example:
          
+           Your Computer
+               |
+           Home Network
+               |
+           ISP Network
+               |
+           Internet
+               |
+           Cloud Network
+               |
+           Web Server
+      
+   The sender does not know the entire physical path.
+   
+   instead, netoworking devices make forwarding decisions at each stage.
+
+    Conceptually: 
+        
+
+           Source 
+             |
+           Router
+             |
+           Router
+             |
+           Router
+             |
+         Destination 
+   
+   Each  routet determines the next step based on the information available to it. 
+
+    No router knows the entire path. Each router only knows:
+      
+      - Which direction to send the data next
+      - Which neighbout is closer to the destination
+    
+   
+   There is a principal of  "hop-by-hop forwading".
+    
+    -> What is hop-by-hop forwading?
+      
+      hop-by-hop forwarding is the pricipal that each device only decided the next hop - not the full path. 
+        
+      Each router:
+        - Does not know the entire route
+        - Only knows: "Send it to that neighbor next"
+      
+
+       For example:
+           
+           Source -> Router A -> Router B -> Router C -> Destination
+          
+          Router A thinks: "I'll send it to Router B"
+          Router B thinks: "I'll send it to Router C"
+          Router C thinks: "I'll send it to Destination"
+
+          No router knows the full path. 
+          Each router only knows the next step. 
+
+ And if you are wondering about what is "Hop"?
+   
+    A hop is one step in the journey. 
+      
+      Home -> Bus stop  -> Office parking -> -> Office 
+                |                |
+               hop 1     ->    hop 2 
+   
+
+  -> And what is packet forwarding?
+     
+     Packing forwarding is the process of moving packets from one devie to the next. 
+
+   Before that understand that what is packet?
+     
+      Packets is a small chunks or pieces of the data. 
+
+   Suppose I am having one large data:
+     
+       Hello, My name is Vishal. -> Large Data
+   
+   Now i want to send this data from one network to the next network. 
+
+     So i can not send this whole data in one go, I need to make small pieces or chunks of this data.
+      
+      Like this: 
+           
+           "Hello"     -> Packet 1
+           "My name"   -> Packet 2
+           "Is Vishal" -> Packet 3
+         
+      Now these packets are send over the network separately. 
+
+
+10. The networking Rules.
+
+   Imagine two computers communicating without any agreed rules.
+
+    Computer A sends data one way. 
+    Computer B interprets it another way.
+
+    Thus, communication fails.
+   
+   Therefore, communicating systems need to follow some rules. 
+
+   These rules defines such things as:
+     
+     1. How data is formatted
+     2. How data is addressed
+     3. How data is transmitted
+     4. How errors are handled
+     5. How communication ends
+     6. How differents types of traffic are indentified
+
+     These rules are called "PROTOCOLS"
+
+     A protocol is essentially an aggreed set of rules for communication. 
+
+     For example:
+          
+             Application 
+                 |
+                HTTP
+                 |
+                TCP
+                 |
+                 IP
+                 |
+             Ethernet
