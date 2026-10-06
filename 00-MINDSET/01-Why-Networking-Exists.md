@@ -618,3 +618,201 @@ Instead, cities use:
                  IP
                  |
              Ethernet
+
+  Each protocol provides a particular set of rules.
+
+  We will study these protocols later by first understanding the problem each one solves.
+
+
+11. The Problem of Reliability
+
+   Consider sending a large amount of information across a network.  
+
+   The network may experience:
+
+        - Packet Loss
+        - Corruption
+        - Delay
+        - Duplication
+        - Reordering
+        - Congestion
+
+  Suppose we send:
+    
+        A B C D E
+
+   but the reciever gets:
+    
+        A C D E
+     Something is missing.
+
+     Or perhaps:
+      
+        A C B D E
+  
+  The information arrived in a different order. 
+
+  Some application can tolerate this.
+
+  others cannot.
+
+  Therefore, Some forms of communication require mechanisms that provide:
+      
+        - ordering
+        - Acknowledgement
+        - Retransmission
+        - Flow Control
+        - Congestion control
+
+  This leads us towards transport protocol as TCP.
+
+  Again, the important thin is the reasoning:
+
+           Network communication can be imperfect 
+                           |
+           Some applications require  reliable delivery
+                           |
+           Additional transport mechanism are required 
+
+
+12. The problem Naming 
+
+      Humans are not particulary  good at remembering large collections of numerical addresses. 
+    
+    Imagine Having to remembers:
+      
+        142.250.X.X
+
+    instead of:
+      
+      google.com
+    
+    For every service we use:
+     
+      A network can work with addresses, but humans prefer meaninfull names.
+    
+     Therefore we need a system that can translate between human-friendly names and network addresses. 
+        
+     Conceptually:
+        
+           Human-friendly name
+                  |
+                 DNS
+                  |
+            Network address
+    
+    This gives rise to the Domain Name system.
+
+   Again:
+      
+        DNS exists because humans and networks have different preferences for indetifying destinations.
+
+    Humans prefer names:
+
+    Networks require addresses. 
+
+
+13. The problem of Configuration
+  
+    Imagine connecting a new computer to a network. 
+
+      The computer needs information such as:
+         
+          IP address
+          Subnet information
+          Default gateway
+          DNS server
+    
+    If an adminstrator had to manually configure every device, large network would become difficult to manage.
+
+    Therefore, networks need mechnaisms for automatically providing configuration information. 
+
+    This leads to technologies or concept called -  Dynamic host control protocol (DHCP) 
+    
+     The reasoning becomes:
+         
+
+         Device join networks
+                 |
+         Device requires configuration
+                 |
+         Manual configuration does not scale
+                 |
+         Automatic configuration is usefull
+                 |
+                DHCP
+
+
+14. The Problem of Security
+  
+  Now imagine a network where any device can communicate with any other device without restrictions.
+
+   That Creates security problems.
+
+   We may need to control:
+     
+        - Who can connect
+        - Which destinations can be reached
+        - Which port can be accessed
+        - Whis traffic is allowed 
+        - Which traffic is blocked
+
+    This leads to mechanism such as:
+         
+        - Firewalls                 -> Which traffis is allowed or blocked
+        - Access control list (ACL) -> Who can access what in the network
+        - Network segmentation      -> which parts of the network can talk
+        - VPNs                      -> Who can connect remotely
+        - Encryption                -> Who can read the data
+        - Zero trust architectures. -> trust nothing by default
+
+    The underlying problem is:
+       
+        Communication must sometimes be controlled rather than simple enabled. 
+         
+         Networking is not just about connecting computers - it is also about deciding which connection should be allowed and which should be blocked
+
+15. The problem of Scale
+   
+    Modern environments may contain:
+       
+        - users
+        - servers
+        - Virtual Machines
+        - Containers
+        - Databases
+        - Microservices
+        - Cloud resources
+        - IoT devices
+        - Mobils Devices
+
+  A modern application may communicate with dozens of hundred of services:
+     
+     For example:
+        
+            User
+             |
+         Load Balancer
+             |
+          Web Server 
+             |
+         Application Server
+             |
+         Authentication Service
+             |
+          Database
+             |
+           cache
+             |
+          External API
+        
+    Every arrow downwards represent communication.
+     
+     Therefore, networking is not a separate concern from modern computing.
+     
+     It is on of the foundations on which modern distributed systems operate.
+     
+
+
+
+
