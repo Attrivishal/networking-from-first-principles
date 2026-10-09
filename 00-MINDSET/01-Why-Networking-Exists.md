@@ -763,3 +763,137 @@ Every arrow downwards represent communication.
 
 Therefore, networking is not a separate concern from modern computing.  
 It is on of the foundations on which modern distributed systems operate.
+
+## 16. Networking is really about Moving Information
+
+  At its most fundamental level:
+      
+      Networking is the engineering of communication between independent systems.
+  
+  Everything elsd exists to solve specific problems associated with that communication.
+
+  We can summarize the evolution like this:
+      
+              Need to communicate
+                     |
+                Need a medium
+                     |
+              Need representation of information
+                     |
+              Need identification 
+                     |
+              Need local delivery 
+                     |
+              Need scalable connectivity 
+                     |
+              Need communication between networks 
+                     |
+                 Need routing
+                     |
+              Need process indetification
+                     |
+              Need transport behavior 
+                     |
+                Need naming
+                     |
+                Need security
+                     |
+                Need observability
+                     |
+                Need troubleshooting 
+
+  The technologies we will study are solutions to these problems. 
+
+
+17. Why Networking Is layered
+    
+    At this point, we have discovered many differents problems:
+        
+         Physical transmission
+         Addressing 
+         Local delivery
+         Routing
+         Transport
+         Application communication
+         Naming
+         Security 
+
+    Trying to solve all of these problems as one giant system would be extremely complicated.
+
+    Instead, networking separates responsibilities.
+    
+    Conceptually:
+       
+        Appliction 
+            |
+        Transport
+            |
+         Network
+            |
+         Data Link
+            |
+         Physical 
+    
+    Each layer handles a particular category of responsibility.
+
+    This makes networking:
+      
+        - Modular
+        - Scalable 
+        - Easier to design
+        - Easier to troubleshoot
+        - Easier to evolve 
+
+    We will study networking model in detail later.
+
+18. A fundamental Example
+   
+   Consider a user opening:
+     
+        https://example.com
+
+   This simple action may require a chain of networking mechanisms.
+
+   Conceptually:
+          
+          User
+           |
+          DNS
+           |
+        IP Address
+           |
+         Routing
+           |
+        TCP / QUIC
+           |
+          TLS
+           |
+         HTTP
+           |
+         Server
+
+    Underneath this:
+       
+         Application
+             |
+         Transport
+             |
+            IP
+             |
+         Ethernet / Wi-Fi
+             |
+         Physical transmission
+
+    And beneath all of that are decisions involving:
+        
+         - Addresses
+         - Routes
+         - Interfaces
+         - Ports
+         - Protocols
+         - Security rules
+
+    A network engineer's job is to understand this chain.
+
+            
+
