@@ -952,4 +952,81 @@ It is on of the foundations on which modern distributed systems operate.
 
    This same reasoning pattern will be used throughout this documentation.  
 
-20. 
+20.  What networking Does Not Mean:
+  
+      Networking is not simply:
+        
+        "Connecting computers with cables."
+      
+      That describes only one small part of networking.
+      
+      Networking includes the complete system required for communication:
+         
+           Physical transmission 
+                    |
+            Data representation 
+                    |
+               Addressing 
+                    |
+              Local delivery 
+                    |
+                 Routing
+                    |
+                Transport
+                    |
+               Apllication protocols
+                    |
+                 Naming
+                    |
+              configuration
+                    |
+                Security
+                    |
+                Monitoring 
+                    |
+              Troubleshooting
+
+      This is why networking becomes such an important foundation for:
+         
+         - Cloud engineering
+         - DevOps
+         - System engineering
+         - CyberSecurity
+         - Distributed systems
+         - Site reliabiltiy engineering
+         - Backend engineering
+         - Kubernetes
+         - Infrastructure engineering
+
+
+21. Why this matters for Cloud Engineering 
+ 
+  Cloud environements are fundamentally networked environments. 
+
+  A cloud application might look like. 
+       
+         Internet
+            |
+        Load Balancer
+            |
+        Web Server
+            |
+        Application Servers
+            |
+         Database
+
+  Those resources communicate through virtual networking components. 
+
+    for example: In AWS we eventually encounter:
+        
+        VPC
+        Subnets
+        Route Table
+        Internet Gateway
+        NAT Gateway
+        Network ACLs
+        Security Groups
+        ENIs
+        Load Balancers
+        VPN
+         
