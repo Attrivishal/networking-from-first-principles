@@ -895,5 +895,61 @@ It is on of the foundations on which modern distributed systems operate.
 
     A network engineer's job is to understand this chain.
 
-            
 
+19. The most Important Mental Model 
+
+    Whenever you encounter a networking technology,ask:
+
+               What problem existed?
+                       |
+          Why was the existing system insufficient?
+                       |
+            What solution was introduced?
+                       |
+          What information does the solution require?
+                       |
+            What decision does it make?
+                       |
+               What happens next?
+
+ For example:
+    
+  Routing
+       
+       Problem:
+         Different networks need to communicate.
+                      |
+                      |
+                      |
+
+         Existing Limitation:
+            
+           Local delivery alone cannot reach remote networks.
+                      |
+                      |
+                      |
+
+          Solution:
+           Routing.
+                      |
+                      |
+                      |
+
+         Required information:
+           Destination + routing information.
+                     |
+                     |
+                     |
+
+          Decision:
+          Where should the packet go next?
+                     |
+                     |
+                     |
+
+         Result:
+          Traffic is forwarded toward the destination.
+
+   This same reasoning pattern will be used throughout this documentation.  
+
+20. 
