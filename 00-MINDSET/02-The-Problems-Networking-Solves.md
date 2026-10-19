@@ -1,4 +1,4 @@
-1. Objective 
+## 1. Objective 
   
   The objective of this document is to understand the fundamental engineering problems that arise when independent computing systems communicate. 
 
