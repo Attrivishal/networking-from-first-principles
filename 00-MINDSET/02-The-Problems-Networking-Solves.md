@@ -30,3 +30,25 @@
         - Why network security and troubleshooting are necessary.
 
   The objective is not to memorize these requirements. It is to understand the reasoning that makes each one necessary.
+
+## 2. Problem One: How Can information Physically Travel?
+
+2.1 The Probelm
+   
+   Imagine two independent computers:
+
+    Computer A                     Computer B
+      
+    Application                      Application
+        |                                 |
+       Data                             Data
+  
+  Computer A contains information that Computer B needs. 
+
+  However, the information exists inside computer A's computing environment. 
+
+  Computer B cannot access that information automatically.
+
+  Questions: How can information travel from one physical system to another?
+
+     The computers require the mechanism that carries information between them.
