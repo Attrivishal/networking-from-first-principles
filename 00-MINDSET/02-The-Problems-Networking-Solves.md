@@ -72,6 +72,11 @@
 
    A cable  alone does not gurantee sucessful communication. The devices also need compatible interfaces, signalling methods, and communication rules. 
 
+## 2.3 The resulting  requirement 
+    
+    
+
+
 
 
 
