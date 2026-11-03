@@ -52,7 +52,25 @@
   Questions: How can information travel from one physical system to another?
 
      The computers require the mechanism that carries information between them.
-     
+
+     That mechanism involves a transmission medium and the technology needed to transmit and receive signals through it.
+
+     Examples include:
+
+      1. Copper Ethernet cables.
+      2. Fiber-optic cables.
+      3. Radio waves used by Wi-Fi.
+      4. Cellular radio networks.
+
+      The precise transmission method depends on the technology being used. 
+
+## 2.2 Why this problem exists
+   
+   Computers process information internally, but communication  between separate systems requires information to cross a physical or wireless boundary.
+
+   The sender nust reprsent information in a form suitable for transmission. The receiver must be able to recover and interpret that information.
+
+   A cable  alone does not gurantee sucessful communication. The devices also need compatible interfaces, signalling methods, and communication rules. 
 
 
 
