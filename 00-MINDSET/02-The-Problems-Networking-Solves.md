@@ -74,7 +74,19 @@
 
 ## 2.3 The resulting  requirement 
     
+     Requirement: 
+        
+        A networking system needs a transimission mechanism that allows information to travel between systems.
+
+     This leads us toward the physical layer, signaling, network interfaces,and transmission media. 
+
+## 2.4 Defend your answer
     
+    Questions: Why do computers  needs a communication medium?
+   
+   A strong 
+    
+
 
 
 
