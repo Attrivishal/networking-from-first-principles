@@ -109,8 +109,18 @@
 
 ## 3.2 Why this probelm exists?
 
-   
+   Communication requires more than moving signals. Both the systems must interpret the transmitted inforamtion consistently.
 
+   Depending on the context, they may need rules for:
+
+   1. Representing data.
+   2. Identifying message bourndaries.
+   3. Interpreting headers.
+   4. Identfying the type of message.
+   5. Determining what action to take. 
+
+
+   For exampel:  an HTTP request and a DNS query have different formats and meanings, even though both are transmitted as network data.
 
 
 
