@@ -84,7 +84,10 @@
     
     Questions: Why do computers  needs a communication medium?
    
-   A strong 
+   A strong answer:
+      
+      Computers are independent systems, so information stored or processed on one machine does not automatically become available to another. A communication medium provides the path through which signals representing that information can travel. Compatible transmission and reception mechanisms are also necessary for the receiving system to recover the transmitted information. 
+      
     
 
 
