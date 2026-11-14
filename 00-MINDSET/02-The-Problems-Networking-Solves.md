@@ -87,8 +87,29 @@
    A strong answer:
       
       Computers are independent systems, so information stored or processed on one machine does not automatically become available to another. A communication medium provides the path through which signals representing that information can travel. Compatible transmission and reception mechanisms are also necessary for the receiving system to recover the transmitted information. 
-      
-    
+
+
+## 3 Problem Two: How can the reciever interpret the information?
+
+ 3.1 The problem
+     
+     Suppose Computer A transmits a sequence of bits:
+        
+        10101000
+     
+     Computer B receives a signal.
+
+     How does it know what those bits mean?
+
+     Are they text, part of an image , network address, or a control instruction?
+
+     Bit also do not explain the intended meaning of the information. 
+
+     The sender and receiver need agreed rules about how information is represented and interpreted.
+
+## 3.2 Why this probelm exists?
+
+   
 
 
 
